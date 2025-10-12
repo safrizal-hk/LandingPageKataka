@@ -48,7 +48,7 @@ export function Services() {
             Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Choose the service that best suits your shoe's needs.
+            Choose the service that best suits your shoe&apos;s needs.
           </p>
         </div>
 
