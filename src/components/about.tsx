@@ -13,7 +13,7 @@ const crimsonText = Crimson_Text({
 export function About() {
   return (
     // 1. Hapus padding horizontal (px-6 lg:px-12) dari <section>
-    <section className="w-full pt-32 pb-20 lg:pt-40 lg:pb-32">
+    <section id="about" className="w-full pt-32 pb-20 lg:pt-40 lg:pb-32">
       {/* 2. Pindahkan padding horizontal ke <div> ini */}
       <div className="max-w-6xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* === KOLOM KIRI (Tidak berubah) === */}

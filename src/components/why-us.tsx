@@ -36,7 +36,7 @@ const features = [
 
 export function WhyUs() {
   return (
-    <section className="w-full py-20 lg:py-32 bg-muted/30">
+    <section id="whywhooseus" className="w-full py-20 lg:py-32 bg-muted/30">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
         <div className="text-center space-y-4 mb-16">
           <h2

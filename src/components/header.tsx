@@ -10,13 +10,13 @@ export function Header() {
   const hasScrolled = useScrollPosition(10);
 
   const menuItems = [
-    { name: "Benefits", href: "#benefits" },
+    { name: "About", href: "#about" },
+    { name: "Why Choose Us", href: "#whychooseus" },
     { name: "Services", href: "#services" },
-    { name: "How-To", href: "#how-to" },
-    { name: "Contact", href: "#contact" },
+    { name: "Location", href: "#location" },
   ];
 
-  const whatsappLink = "https://wa.me/6281234567890";
+  const whatsappLink = "https://wa.me/6281000000";
 
   return (
     <header

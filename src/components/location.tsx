@@ -8,7 +8,7 @@ const crimsonText = Crimson_Text({
 
 export function Location() {
   return (
-    <section className="w-full py-20 lg:py-32 bg-white">
+    <section id="location" className="w-full py-20 lg:py-32 bg-white">
       <div className="max-w-6xl mx-auto px-6 lg:px-12 flex flex-col items-center text-center">
         <h2
           className={`text-5xl md:text-6xl lg:text-7xl tracking-tight mb-12 ${crimsonText.className}`}

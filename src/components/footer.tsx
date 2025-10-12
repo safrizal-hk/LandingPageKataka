@@ -1,84 +1,87 @@
 export function Footer() {
   return (
-    <footer className="w-full py-12 px-6 lg:px-12 border-t border-border">
-      <div className="max-w-7xl mx-auto">
+    // Added background color, base text color, and adjusted border color
+    <footer className="w-full bg-[#78959C] py-12 px-6 lg:px-12 border-t border-slate-500 text-white">
+      <div className="max-w-6xl mx-auto px-6 lg:px-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
+          {/* Column 1: Brand Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-foreground rounded-lg flex items-center justify-center">
-                <span className="text-background font-bold text-sm">SC</span>
-              </div>
-              <span className="font-bold text-lg">SneakClean Artsy</span>
+              <span className="font-bold text-lg text-white">KATAKA</span>
             </div>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Layanan cuci sepatu premium dengan standar kualitas terbaik di Jakarta.
+            <p className="text-slate-300 text-sm leading-relaxed">
+              Premium shoe cleaning service with the highest quality standards in Jakarta.
             </p>
           </div>
 
+          {/* Column 2: Services */}
           <div className="space-y-4">
-            <h3 className="font-semibold">Layanan</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <h3 className="font-semibold text-white">Services</h3>
+            <ul className="space-y-2 text-sm text-slate-300">
               <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Cuci Reguler
+                <a href="#" className="hover:text-white transition-colors">
+                  Regular Clean
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-foreground transition-colors">
+                <a href="#" className="hover:text-white transition-colors">
                   Deep Clean
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-foreground transition-colors">
+                <a href="#" className="hover:text-white transition-colors">
                   Repaint
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-foreground transition-colors">
+                <a href="#" className="hover:text-white transition-colors">
                   Unyellowing
                 </a>
               </li>
             </ul>
           </div>
 
+          {/* Column 3: Company */}
           <div className="space-y-4">
-            <h3 className="font-semibold">Perusahaan</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <h3 className="font-semibold text-white">Company</h3>
+            <ul className="space-y-2 text-sm text-slate-300">
               <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Tentang Kami
+                <a href="#about" className="hover:text-white transition-colors">
+                  About
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Cara Kerja
+                <a href="#whychooseus" className="hover:text-white transition-colors">
+                  Why Choose Us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  FAQ
+                <a href="#services" className="hover:text-white transition-colors">
+                  Services
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Kontak
+                <a href="#location" className="hover:text-white transition-colors">
+                  Location
                 </a>
               </li>
             </ul>
           </div>
 
+          {/* Column 4: Contact */}
           <div className="space-y-4">
-            <h3 className="font-semibold">Kontak</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Jakarta, Indonesia</li>
-              <li>+62 812-3456-7890</li>
-              <li>hello@sneakcleanartsy.com</li>
+            <h3 className="font-semibold text-white">Contact</h3>
+            <ul className="space-y-2 text-sm text-slate-300">
+              <li>Surabaya, Indonesia</li>
+              <li>+62 810000000</li>
+              <li>hello@kataka.com</li>
             </ul>
           </div>
         </div>
 
-        <div className="pt-8 border-t border-border text-center">
-          <p className="text-sm text-muted-foreground">© 2024 SneakClean Artsy. Semua hak dilindungi.</p>
+        {/* Copyright section */}
+        <div className="pt-8 border-t border-slate-500 text-center">
+          <p className="text-sm text-slate-300">© 2024 SneakClean Artsy. All rights reserved.</p>
         </div>
       </div>
     </footer>
