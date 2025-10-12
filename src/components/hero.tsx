@@ -10,7 +10,7 @@ const crimsonText = Crimson_Text({
 export function Hero() {
   return (
     // 1. Hapus padding horizontal (px-6 lg:px-12) dari sini
-    <section className="w-full py-20 lg:py-32 bg-white">
+    <section className="w-full py-32 lg:py-32 bg-white">
       {/* 2. Tambahkan padding horizontal (px-6 lg:px-12) di sini */}
       <div className="max-w-6xl mx-auto px-6 lg:px-12 flex flex-col items-center text-center">
         <h2
