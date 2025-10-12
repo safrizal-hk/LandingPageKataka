@@ -1,11 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Crimson_Text } from "next/font/google";
-
-const crimsonText = Crimson_Text({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-});
+import { crimsonText } from "@/lib/fonts"; // <- Impor dari file terpusat
 
 // 1. Content translated to English
 const services = [

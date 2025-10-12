@@ -1,11 +1,6 @@
 
-import { Crimson_Text } from "next/font/google";
+import { crimsonText } from "@/lib/fonts"; // <- Impor dari file terpusat
 import Image from "next/image";
-
-const crimsonText = Crimson_Text({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-});
 
 export function Hero() {
   return (

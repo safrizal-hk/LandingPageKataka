@@ -1,10 +1,5 @@
 
-import { Crimson_Text } from "next/font/google";
-
-const crimsonText = Crimson_Text({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-});
+import { crimsonText } from "@/lib/fonts"; // <- Impor dari file terpusat
 
 export function Location() {
   return (

@@ -1,14 +1,7 @@
 // Impor yang diperlukan tetap sama di sini
-import { Crimson_Text } from "next/font/google";
+import { crimsonText } from "@/lib/fonts"; // <- Impor dari file terpusat
 import GlareHover from "@/components/GlareHover/GlareHover";
 import Image from "next/image";
-
-// Anda mungkin perlu menambahkan definisi crimsonText di sini jika belum ada
-const crimsonText = Crimson_Text({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-});
-
 
 export function About() {
   return (
