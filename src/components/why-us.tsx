@@ -1,6 +1,10 @@
+"use client";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Card, CardContent } from "@/components/ui/card";
 import { Sparkles, Shield, Clock, Truck } from "lucide-react";
-import { crimsonText } from "@/lib/fonts"; // <- Impor dari file terpusat
+import { crimsonText } from "@/lib/fonts";
 
 const features = [
   {
@@ -30,10 +34,20 @@ const features = [
 ];
 
 export function WhyUs() {
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+      once: false,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
   return (
     <section id="whywhooseus" className="w-full py-20 lg:py-32 bg-muted/30">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
-        <div className="text-center space-y-4 mb-16">
+        
+        {/* Judul dan deskripsi */}
+        <div className="text-center space-y-4 mb-16" data-aos="fade-up">
           <h2
             className={`text-5xl lg:text-7xl tracking-tight text-balance ${crimsonText.className}`}
           >
@@ -42,28 +56,30 @@ export function WhyUs() {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             We are dedicated to providing the best service through safe,
             sustainable cleaning methods combining premium quality with
-            eco-friendly care
+            eco-friendly care.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Daftar fitur */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           {features.map((feature, index) => (
-            <Card
+            <div
               key={index}
-              // --- PERUBAHAN DI SINI ---
-              // Tambahkan `hover:scale-105` untuk membuat kartu membesar 5% saat di-hover
-              className="border-border bg-card hover:shadow-lg transition-all duration-300 group hover:scale-105"
+              data-aos="fade-up"
+              className="transition-transform duration-500 h-full"
             >
-              <CardContent className="p-8 text-center space-y-4">
-                <div className="w-16 h-16 bg-[#78959C] rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
-                  <feature.icon className="w-8 h-8 text-background" />
-                </div>
-                <h3 className="text-xl font-bold">{feature.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {feature.description}
-                </p>
-              </CardContent>
-            </Card>
+              <Card className="border-border bg-card hover:shadow-xl transition-transform duration-300 group hover:scale-105 h-full flex flex-col justify-between">
+                <CardContent className="p-8 text-center space-y-4 flex flex-col flex-grow">
+                  <div className="w-16 h-16 bg-[#78959C] rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-transform duration-300">
+                    <feature.icon className="w-8 h-8 text-background" />
+                  </div>
+                  <h3 className="text-xl font-bold">{feature.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed flex-grow">
+                    {feature.description}
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           ))}
         </div>
       </div>

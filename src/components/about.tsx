@@ -1,16 +1,27 @@
-// Impor yang diperlukan tetap sama di sini
-import { crimsonText } from "@/lib/fonts"; // <- Impor dari file terpusat
+"use client";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { crimsonText } from "@/lib/fonts";
 import GlareHover from "@/components/GlareHover/GlareHover";
 import Image from "next/image";
 
 export function About() {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      once: false,
+    });
+  }, []);
+
   return (
-    // 1. Hapus padding horizontal (px-6 lg:px-12) dari <section>
     <section id="about" className="w-full pt-32 pb-20 lg:pt-40 lg:pb-32">
-      {/* 2. Pindahkan padding horizontal ke <div> ini */}
       <div className="max-w-6xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-        {/* === KOLOM KIRI (Tidak berubah) === */}
-        <div className="space-y-8">
+        {/* === KOLOM KIRI (Teks dengan animasi) === */}
+        <div
+          className="space-y-8"
+          data-aos="fade-up"
+        >
           <div className="space-y-6">
             <h1
               className={`text-4xl sm:text-5xl lg:text-7xl tracking-tight leading-tight ${crimsonText.className}`}
@@ -26,8 +37,11 @@ export function About() {
           </div>
         </div>
 
-        {/* === KOLOM KANAN (Tidak berubah) === */}
-        <div className="relative w-full max-w-xl mx-auto aspect-[4/3]">
+        {/* === KOLOM KANAN (Gambar dengan animasi) === */}
+        <div
+          className="relative w-full max-w-xl mx-auto aspect-[4/3]"
+          data-aos="fade-up"
+        >
           <GlareHover
             glareColor="#ffffff"
             glareOpacity={0.25}
