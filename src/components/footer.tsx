@@ -7,7 +7,7 @@ export function Footer() {
           {/* Column 1: Brand Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <span className="font-bold text-lg text-white">KATAKA</span>
+              <span className="font-bold text-lg text-white">Membasuh</span>
             </div>
             <p className="text-slate-300 text-sm leading-relaxed">
               Premium shoe cleaning service with the highest quality standards in Jakarta.

@@ -46,7 +46,7 @@ export function Header() {
             href="/"
             className="font-bold text-xl tracking-tight text-[#78959C]"
           >
-            KATAKA
+            Membasuh
           </Link>
         </div>
 

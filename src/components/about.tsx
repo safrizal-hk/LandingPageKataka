@@ -26,7 +26,7 @@ export function About() {
             <h1
               className={`text-4xl sm:text-5xl lg:text-7xl tracking-tight leading-tight ${crimsonText.className}`}
             >
-              About Kataka
+              About Membasuh
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-lg">
               Since 2022, we&apos;ve focused on one thing — bringing sneakers
